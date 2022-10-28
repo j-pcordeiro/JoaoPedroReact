@@ -1,12 +1,16 @@
+import React from 'react'
+import imgagemEscolhida from './download.jpg'
+import ListaProdutos from "./listaProdutos";
 
 function Navbar()
 {
     return(
         <header>
-            <h3>Logo da Padaria</h3>
+            <img src={imgagemEscolhida}/>
+            
             <nav>
-                <a href="/">Pagina Inicial</a>
-                <a href="/">Produtos</a>
+                <h3 href="/">Produtos</h3>
+                <ListaProdutos />
             </nav>
             
         </header>
@@ -14,3 +18,5 @@ function Navbar()
     );
 }
 export default Navbar ;
+
+ 
